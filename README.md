@@ -8,10 +8,11 @@
 *Finalize projects idea including what is your dataset, what are the problems you’re solving, and what will be the predictive problem you will solve.
 
 As a collective, Group 4 decided to do the following:
+
 January 2020 Flight Predictions:
-1.	Predictive Problem:  Flight Delays
-2.	Best and Worst Airlines
-3.	Best and Worst Airports
+1.	Predictive Problem:  Flight Delays for the total flights in January 2020
+2.	Determine the Best and Worst Airlines for flight delays
+3.	Determine the Best and Worst Airports for flight delays
 
 ## B.	ER Diagram and Database Setup
 *Create an ER diagram and setup database for your data (if applicable)
