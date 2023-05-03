@@ -35,6 +35,16 @@ January 2020 Flight Predictions:
 
 1.	John Harris created the machine learning model mockup
 
+### Machine Learning Models used for for project are listed below:
+- import pandas as pd
+- import numpy as np
+- from sklearn.model_selection import train_test_split
+- from sklearn.preprocessing import StandardScaler, LabelEncoder
+- from sklearn.linear_model import LogisticRegression
+- from sklearn.ensemble import RandomForestClassifier
+- from xgboost import XGBClassifier
+- from sklearn.metrics import accuracy_score, f1_score
+
 ## E.	Github
 *Continue to use Github for all the data
 
@@ -42,5 +52,5 @@ January 2020 Flight Predictions:
 2.	John Harris is the Github Manager
 
 ## Additions:
-1.	Add the dataset information
-2.  Add Machine Learning paper-baesd mockup
+1.	Add the dataset information - csv files
+
