@@ -19,10 +19,16 @@ January 2020 Flight Predictions:
 1.	John Harris created the ER diagrams using pgAdmin 
 2.	John Harris setup the database using AWS
 
+### ER Diagram below:
+<img width="541" alt="ERD" src="https://user-images.githubusercontent.com/114943747/235814848-549a4143-fcfa-4698-bf04-8ee8b7683889.png">
+
 ## C.	Visualization Board
 *Create a rough outline of your visualization dashboard
 
 1.	Kennan Foust will create a visualization dashboard outline using Tableau
+
+### Tableau Visualization Mockup below:
+![finalpapertableaumockup](https://user-images.githubusercontent.com/114943747/235814970-3c0ee883-eacf-4b7a-b101-4a70bd890924.jpg)
 
 ## D.	Machine Learning Model
 *Create a paper-based mockup of your machine learning model
@@ -37,5 +43,4 @@ January 2020 Flight Predictions:
 
 ## Additions:
 1.	Add the dataset information
-2.	Add Machine Learning mockup
-3.	Add Tableau mockup
+2.  Add Machine Learning paper-baesd mockup
