@@ -17,7 +17,7 @@ January 2020 Flight Predictions:
 ## B.	ER Diagram and Database Setup
 *Create an ER diagram and setup database for your data (if applicable)
 
-1.	John Harris created the ER diagrams using pgAdmin 
+1.	John Harris created the ER diagrams using Quick DBD
 2.	John Harris setup the database using AWS
 
 ### ER Diagram below:
@@ -27,6 +27,7 @@ January 2020 Flight Predictions:
 *Create a rough outline of your visualization dashboard
 
 1.	Kennan Foust will create a visualization dashboard outline using Tableau
+2.	Group will review, provide feedback and make edits.
 
 ### Tableau Visualization Mockup below:
 ![finalpapertableaumockup](https://user-images.githubusercontent.com/114943747/235814970-3c0ee883-eacf-4b7a-b101-4a70bd890924.jpg)
@@ -34,24 +35,18 @@ January 2020 Flight Predictions:
 ## D.	Machine Learning Model
 *Create a paper-based mockup of your machine learning model
 
-1.	John Harris created the machine learning model mockup
+1.	John Harris set up the machine learning model mockup
+2.	We've have been testing different models to see what will work best for the data we have.
+3.	Group will review, provide feedback and make edits
 
-### Machine Learning Models used for for project are listed below:
-- import pandas as pd
-- import numpy as np
-- from sklearn.model_selection import train_test_split
-- from sklearn.preprocessing import StandardScaler, LabelEncoder
-- from sklearn.linear_model import LogisticRegression
-- from sklearn.ensemble import RandomForestClassifier
-- from xgboost import XGBClassifier
-- from sklearn.metrics import accuracy_score, f1_score
+### Machine Learning Models we have used and/or tested for for project are listed below:
+- Logistic Regression Model
+- Random Forest Classifier Model
+- Gradient Boosting Classifier Model
 
 ## E.	Github
 *Continue to use Github for all the data
 
 1.	Marcia Joseph responsible for keeping Group 4’s project deliverable READ.me logs updated.
 2.	John Harris is the Github Manager
-
-## Additions:
-1.	Add the dataset information - csv files
 
