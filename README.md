@@ -57,7 +57,7 @@ this will be the best model for our final project.
 <img width="468" alt="image" src="https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/8c09d6e6-9a46-40ab-9d37-546c90ff5d8e">
 
 
-## C.	Visualization Board
+## C.	Visualization Board - First Attempt
 *First attempt of a working dashboard
 
 ### 1.	Working Tableau dashboard link:
