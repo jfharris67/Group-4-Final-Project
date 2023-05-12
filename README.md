@@ -83,7 +83,7 @@ http://flightdelay.cqtoprenvzmu.us-east-2.rds.amazonaws.com
 ### 4.  Flight Delay Database Query Tables:
 
 ### Table 1:
-#### CREATE TABLE Flights (
+CREATE TABLE Flights (
     DAY_OF_MONTH int,
     DAY_OF_WEEK int,
     OP_UNIQUE_CARRIER varchar,
@@ -108,23 +108,23 @@ http://flightdelay.cqtoprenvzmu.us-east-2.rds.amazonaws.com
 );
 
 ### Table 2:
-#### CREATE TABLE Arrival_Airports (
+CREATE TABLE Arrival_Airports (
     airport varchar PRIMARY KEY,
     airport_name varchar
 
 ### Table 3:
-#### CREATE TABLE Departure_Airports (
+CREATE TABLE Departure_Airports (
     airport varchar PRIMARY KEY,
     airport_name varchar
 
 ### Table 4:
-#### CREATE TABLE Airlines (
+CREATE TABLE Airlines (
     carrier varchar PRIMARY KEY,
     carrier_name varchar
 );
 
 ### Table 5:
-#### ALTER TABLE Flights
+ALTER TABLE Flights
 ADD FOREIGN KEY (DEST) REFERENCES Arrival_Airports(airport);ALTER TABLE Flights
 ADD FOREIGN KEY (ORIGIN) REFERENCES Departure_Airports(airport);ALTER TABLE Flights
 ADD FOREIGN KEY (OP_UNIQUE_CARRIER) REFERENCES Airlines(carrier);
