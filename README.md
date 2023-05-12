@@ -17,7 +17,7 @@ January 2020 Flight Predictions:
 ## B.	Machine Learning Model – First Attempt
 *First attempt of a machine learning model, including a confusion matrix and accuracy score
 
-Classification Model testing
+### Classification Model testing:
 •	Logistic Regression Model:
 •	Training Accuracy: 93.21%
 •	Testing Accuracy: 93.14%
@@ -25,21 +25,21 @@ Classification Model testing
 •	Recall (weighted average): 93%
 •	F1-Score (weighted average): 93%
 
-Random Forest Classifier:
+### Random Forest Classifier:
 •	Training Accuracy: 90.78%
 •	Testing Accuracy: 89.69%
 •	Precision (weighted average): 90%
 •	Recall (weighted average): 90%
 •	F1-Score (weighted average): 87%
 
-Gradient Boosting Classifier:
+### Gradient Boosting Classifier:
 •	Training Accuracy: 93.21%
 •	Testing Accuracy: 93.21%
 •	Precision (weighted average): 93%
 •	Recall (weighted average): 93%
 •	F1-Score (weighted average): 93%
 
-Best Model for our Project:
+### Best Model for our Project:
 
 It has the highest testing accuracy (93.21%) among the three models, which shows it works well with unseen data. It has a strong balance between precision, recall,
 and F1-score, indicating that it performs well across different metrics. 
@@ -60,30 +60,30 @@ this will be the best model for our final project.
 ## C.	Visualization Board
 *First attempt of a working dashboard
 
-1.	Link to working Tableau dashboard below:
+### 1.	Link to working Tableau dashboard below:
 https://public.tableau.com/app/profile/kennan.foust/viz/ProjectTableau_16832615644700/Dashboard1?publish=yes
 
-2.	Please find below a picture of the first Tableau Dashboard draft:
+### 2.	Please find below a picture of the first Tableau Dashboard draft:
 <img width="468" alt="image" src="https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/13b4651f-4f19-4cdf-af47-63963931df60">
 
 ## D.	Database 
 *Database that stores data for the project (if applicable)
 
-1.	A database was setup using AWS.  Link to database is below:
+### 1.	A database was setup using AWS.  Link to database is below:
 http://flightdelay.cqtoprenvzmu.us-east-2.rds.amazonaws.com
 
-2.	ER Diagrams were created using Quick DBD (pictured below)
+### 2.	ER Diagrams were created using Quick DBD (pictured below)
 
 <img width="403" alt="image" src="https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/4d120c00-ea21-4fa0-bb87-e1642fd07314">
 
-3.	PgAdmin – add screen shot (pictured below)
+### 3.	PgAdmin – add screen shot (pictured below)
 
 <img width="257" alt="image" src="https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/0c889988-b842-4a73-a521-8068c479f4e9">
 
-4.  Flight Delay Database Query Tables:
+### 4.  Flight Delay Database Query Tables:
 
-Table 1:
-CREATE TABLE Flights (
+### Table 1:
+#### CREATE TABLE Flights (
     DAY_OF_MONTH int,
     DAY_OF_WEEK int,
     OP_UNIQUE_CARRIER varchar,
@@ -107,24 +107,24 @@ CREATE TABLE Flights (
     DISTANCE float
 );
 
-Table 2:
-CREATE TABLE Arrival_Airports (
+### Table 2:
+#### CREATE TABLE Arrival_Airports (
     airport varchar PRIMARY KEY,
     airport_name varchar
 
-Table 3:
-CREATE TABLE Departure_Airports (
+### Table 3:
+#### CREATE TABLE Departure_Airports (
     airport varchar PRIMARY KEY,
     airport_name varchar
 
-Table 4:
-CREATE TABLE Airlines (
+### Table 4:
+#### CREATE TABLE Airlines (
     carrier varchar PRIMARY KEY,
     carrier_name varchar
 );
 
-Table 5:
-ALTER TABLE Flights
+### Table 5:
+#### ALTER TABLE Flights
 ADD FOREIGN KEY (DEST) REFERENCES Arrival_Airports(airport);ALTER TABLE Flights
 ADD FOREIGN KEY (ORIGIN) REFERENCES Departure_Airports(airport);ALTER TABLE Flights
 ADD FOREIGN KEY (OP_UNIQUE_CARRIER) REFERENCES Airlines(carrier);
@@ -132,6 +132,7 @@ ADD FOREIGN KEY (OP_UNIQUE_CARRIER) REFERENCES Airlines(carrier);
 ## E.	E.	Group 4 Presentation – Draft
 *Draft of presentation 
 
-1.	Link to PowerPoint presentation flie is in the main branch.  It is titled, "Group 4 Final Project Draft 1"
+### 1.	Link to PowerPoint presentation flie is in the main branch.  
+File title is "Group 4 Final Project Draft 1"
 
 
