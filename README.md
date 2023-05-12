@@ -76,7 +76,7 @@ http://flightdelay.cqtoprenvzmu.us-east-2.rds.amazonaws.com
 
 <img width="403" alt="image" src="https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/4d120c00-ea21-4fa0-bb87-e1642fd07314">
 
-### 3.	PgAdmin – add screen shot (pictured below)
+### 3.	PgAdmin – (screen shot pictured below)
 
 <img width="257" alt="image" src="https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/0c889988-b842-4a73-a521-8068c479f4e9">
 
