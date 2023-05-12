@@ -2,7 +2,7 @@
 
 # Title:  January 2020 Flight Predictions: Flight Delays, Best and Worst Airports and Airlines
 
-# I.	SEGMENT 1 DELIVERABLES:  COMPLETED
+# I.	SEGMENT 2 DELIVERABLES:  COMPLETED
 
 ## A.	Project Overview 
 *Finalize projects idea including what is your dataset, what are the problems you’re solving, and what will be the predictive problem you will solve.
@@ -14,39 +14,124 @@ January 2020 Flight Predictions:
 2.	Determine the Best and Worst Airlines for flight delays
 3.	Determine the Best and Worst Airports for flight delays
 
-## B.	ER Diagram and Database Setup
-*Create an ER diagram and setup database for your data (if applicable)
+## B.	Machine Learning Model – First Attempt
+*First attempt of a machine learning model, including a confusion matrix and accuracy score
 
-1.	John Harris created the ER diagrams using Quick DBD
-2.	John Harris setup the database using AWS
+Classification Model testing
+•	Logistic Regression Model:
+•	Training Accuracy: 93.21%
+•	Testing Accuracy: 93.14%
+•	Precision (weighted average): 93%
+•	Recall (weighted average): 93%
+•	F1-Score (weighted average): 93%
 
-### ER Diagram below:
-<img width="541" alt="ERD" src="https://user-images.githubusercontent.com/114943747/235814848-549a4143-fcfa-4698-bf04-8ee8b7683889.png">
+Random Forest Classifier:
+•	Training Accuracy: 90.78%
+•	Testing Accuracy: 89.69%
+•	Precision (weighted average): 90%
+•	Recall (weighted average): 90%
+•	F1-Score (weighted average): 87%
+
+Gradient Boosting Classifier:
+•	Training Accuracy: 93.21%
+•	Testing Accuracy: 93.21%
+•	Precision (weighted average): 93%
+•	Recall (weighted average): 93%
+•	F1-Score (weighted average): 93%
+
+Best Model for our Project:
+
+It has the highest testing accuracy (93.21%) among the three models, which shows it works well with unseen data. It has a strong balance between precision, recall,
+and F1-score, indicating that it performs well across different metrics. 
+
+The model is not only good at identifying true positives but also at minimizing false positives and false negatives, making it the most reliable choice. We believe
+this will be the best model for our final project.
+
+### Machine Learning Model Visuals
+<img width="468" alt="image" src="https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/6dc1741c-b237-4832-acd4-c68df4dbc3b7">
+
+<img width="468" alt="image" src="https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/61bd90b4-ecc9-42b3-8569-65faaebee7bb">
+
+<img width="468" alt="image" src="https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/795f797a-c364-4726-adc4-bcdfa7719552">
+
+<img width="468" alt="image" src="https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/8c09d6e6-9a46-40ab-9d37-546c90ff5d8e">
+
 
 ## C.	Visualization Board
-*Create a rough outline of your visualization dashboard
+*First attempt of a working dashboard
 
-1.	Kennan Foust will create a visualization dashboard outline using Tableau
-2.	Group will review, provide feedback and make edits.
+1.	Link to working Tableau dashboard below:
+https://public.tableau.com/app/profile/kennan.foust/viz/ProjectTableau_16832615644700/Dashboard1?publish=yes
 
-### Tableau Visualization Mockup below:
-![finalpapertableaumockup](https://user-images.githubusercontent.com/114943747/235814970-3c0ee883-eacf-4b7a-b101-4a70bd890924.jpg)
+2.	Please find below a picture of the first Tableau Dashboard draft:
+<img width="468" alt="image" src="https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/13b4651f-4f19-4cdf-af47-63963931df60">
 
-## D.	Machine Learning Model
-*Create a paper-based mockup of your machine learning model
+## D.	Database 
+*Database that stores data for the project (if applicable)
 
-1.	John Harris set up the machine learning model mockup
-2.	We've have been testing different models to see what will work best for the data we have.
-3.	Group will review, provide feedback and make edits
+1.	A database was setup using AWS.  Link to database is below:
+http://flightdelay.cqtoprenvzmu.us-east-2.rds.amazonaws.com
 
-### Machine Learning Models we have used and/or tested for for project are listed below:
-- Logistic Regression Model
-- Random Forest Classifier Model
-- Gradient Boosting Classifier Model
+2.	ER Diagrams were created using Quick DBD (pictured below)
 
-## E.	Github
-*Continue to use Github for all the data
+<img width="403" alt="image" src="https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/4d120c00-ea21-4fa0-bb87-e1642fd07314">
 
-1.	Marcia Joseph responsible for keeping Group 4’s project deliverable READ.me logs updated.
-2.	John Harris is the Github Manager
+3.	PgAdmin – add screen shot (pictured below)
+
+<img width="257" alt="image" src="https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/0c889988-b842-4a73-a521-8068c479f4e9">
+
+4.  Flight Delay Database Query Tables:
+
+Table 1:
+CREATE TABLE Flights (
+    DAY_OF_MONTH int,
+    DAY_OF_WEEK int,
+    OP_UNIQUE_CARRIER varchar,
+    OP_CARRIER_AIRLINE_ID int,
+    OP_CARRIER varchar,
+    TAIL_NUM varchar,
+    OP_CARRIER_FL_NUM int,
+    ORIGIN_AIRPORT_ID int,
+    ORIGIN_AIRPORT_SEQ_ID int,
+    ORIGIN varchar,
+    DEST_AIRPORT_ID int,
+    DEST_AIRPORT_SEQ_ID int,
+    DEST varchar,
+    DEP_TIME float,
+    DEP_DEL15 float,
+    DEP_TIME_BLK varchar,
+    ARR_TIME float,
+    ARR_DEL15 float,
+    CANCELLED float,
+    DIVERTED float,
+    DISTANCE float
+);
+
+Table 2:
+CREATE TABLE Arrival_Airports (
+    airport varchar PRIMARY KEY,
+    airport_name varchar
+
+Table 3:
+CREATE TABLE Departure_Airports (
+    airport varchar PRIMARY KEY,
+    airport_name varchar
+
+Table 4:
+CREATE TABLE Airlines (
+    carrier varchar PRIMARY KEY,
+    carrier_name varchar
+);
+
+Table 5:
+ALTER TABLE Flights
+ADD FOREIGN KEY (DEST) REFERENCES Arrival_Airports(airport);ALTER TABLE Flights
+ADD FOREIGN KEY (ORIGIN) REFERENCES Departure_Airports(airport);ALTER TABLE Flights
+ADD FOREIGN KEY (OP_UNIQUE_CARRIER) REFERENCES Airlines(carrier);
+
+## E.	E.	Group 4 Presentation – Draft
+*Draft of presentation 
+
+1.	Link to PowerPoint presentation flie is in the main branch.  It is titled, "Group 4 Final Project Draft 1"
+
 
