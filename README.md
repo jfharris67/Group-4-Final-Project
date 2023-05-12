@@ -17,7 +17,7 @@ January 2020 Flight Predictions:
 ## B.	Machine Learning Model – First Attempt
 *First attempt of a machine learning model, including a confusion matrix and accuracy score
 
-### Classification Model testing:
+### Classification Model:
 •	Logistic Regression Model:
 •	Training Accuracy: 93.21%
 •	Testing Accuracy: 93.14%
