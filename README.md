@@ -69,7 +69,8 @@ https://public.tableau.com/app/profile/kennan.foust/viz/ProjectTableau_168326156
 ## D.	Database 
 *Database that stores data for the project (if applicable)
 
-### 1.	A database was setup using AWS.  Link to database is below:
+### 1.	The database was setup using AWS.  
+Link to database is below:
 http://flightdelay.cqtoprenvzmu.us-east-2.rds.amazonaws.com
 
 ### 2.	ER Diagrams were created using Quick DBD (pictured below)
