@@ -60,10 +60,10 @@ this will be the best model for our final project.
 ## C.	Visualization Board
 *First attempt of a working dashboard
 
-### 1.	Link to working Tableau dashboard below:
+### 1.	Working Tableau dashboard link:
 https://public.tableau.com/app/profile/kennan.foust/viz/ProjectTableau_16832615644700/Dashboard1?publish=yes
 
-### 2.	Please find below a picture of the first Tableau Dashboard draft:
+### 2.	Tableau Dashboard - Draft 1:
 <img width="468" alt="image" src="https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/13b4651f-4f19-4cdf-af47-63963931df60">
 
 ## D.	Database 
