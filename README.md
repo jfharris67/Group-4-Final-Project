@@ -134,6 +134,9 @@ ADD FOREIGN KEY (OP_UNIQUE_CARRIER) REFERENCES Airlines(carrier);
 *Draft of presentation 
 
 ### 1.	Link to PowerPoint presentation flie is in the main branch.  
+
 File title is "Group 4 Final Project Draft 1"
+
+#### PLEASE NOTE:  The PowerPoint file was too big to download and will have to be downloaded in order to view.
 
 
