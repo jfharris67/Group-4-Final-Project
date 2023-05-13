@@ -124,7 +124,7 @@ CREATE TABLE Airlines (
     carrier_name varchar
 );
 
-### Table 5:
+### Foreign Key Constraints:
 ALTER TABLE Flights
 ADD FOREIGN KEY (DEST) REFERENCES Arrival_Airports(airport);ALTER TABLE Flights
 ADD FOREIGN KEY (ORIGIN) REFERENCES Departure_Airports(airport);ALTER TABLE Flights
