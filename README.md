@@ -112,17 +112,19 @@ CREATE TABLE Flights (
 CREATE TABLE Arrival_Airports (
     airport varchar PRIMARY KEY,
     airport_name varchar
+    );
 
 ### Table 3:
 CREATE TABLE Departure_Airports (
     airport varchar PRIMARY KEY,
     airport_name varchar
+    );
 
 ### Table 4:
 CREATE TABLE Airlines (
     carrier varchar PRIMARY KEY,
     carrier_name varchar
-);
+    );
 
 ### Foreign Key Constraints:
 ALTER TABLE Flights
