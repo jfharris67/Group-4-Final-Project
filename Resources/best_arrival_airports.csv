@@ -1,0 +1,11 @@
+airport_name,total_flights,delayed_flights,percentage_delayed
+"Owensboro, KY: Owensboro Daviess County Regional",9,0,0
+"St. Cloud, MN: St. Cloud Regional",13,0,0
+"Devils Lake, ND: Devils Lake Regional",47,1,2.127659574468085
+"Twin Falls, ID: Joslin Field - Magic Valley Regional",89,4,4.49438202247191
+"Lewiston, ID: Lewiston Nez Perce County",64,3,4.6875
+"Butte, MT: Bert Mooney",58,3,5.172413793103448
+"Watertown, SD: Watertown Regional",56,3,5.357142857142857
+"Pocatello, ID: Pocatello Regional",92,5,5.434782608695652
+"Cedar City, UT: Cedar City Regional",54,3,5.555555555555555
+"Hilo, HI: Hilo International",535,30,5.607476635514018
