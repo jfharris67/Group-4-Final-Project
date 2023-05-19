@@ -30,10 +30,10 @@
 •	Created Flight Delay Database Query Tables (listed below)
 
 #### ER Diagrams
-![image](https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/bd20db1c-59f8-49ee-a537-7ae169717f4a)
+![image](https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/c9dadf3d-a457-494c-a28b-305bfaf930a1)
 
 #### PgAdmin
-![image](https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/bc3e7bcf-926b-43ef-8946-5793b6f3ab32)
+![image](https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/46076eda-ae6c-401b-8f69-8a9522df8839)
 
 #### Flight Delay Database Query Tables
 
