@@ -215,7 +215,7 @@ https://public.tableau.com/app/profile/kennan.foust/viz/ProjectTableau_168326156
 ## I.	PowerPoint Presentation 
 
 ### Group 4 FINAL Presentation 
-1.	Link to PowerPoint presentation in main branch.
+1.	The presentation can be found in the main branch.
 2.	File title is “Final Group 4 Presentation”
 
 #### PLEASE NOTE:  The PowerPoint file was too big to download so I saved it as a PDF.
