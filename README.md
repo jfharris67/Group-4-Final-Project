@@ -1,89 +1,43 @@
 # Group-4-Final-Project
 
-# Title:  January 2020 Flight Predictions: Flight Delays, Best and Worst Airports and Airlines
+# PRESENTATION TOPIC
 
-# I.	SEGMENT 2 DELIVERABLES:  COMPLETED
+# January 2020 Flight Delay Analysis:  Flight Delays, Best and Worst Airlines and Airports
 
-## A.	Project Overview 
-*Finalize projects idea including what is your dataset, what are the problems you’re solving, and what will be the predictive problem you will solve.
+## A.	Project Overview
+1.	Predictive Problem:  Predict the arrival of flight delays with real world data
+2.	Determine the Best and Worst Airlines for flight delay arrivals and departures
+3.	Determine the Best and Worst Airports for flight delay arrivals and departures
 
-As a collective, Group 4 decided to do the following:
+## B.	Why we chose this topic?
+1.	We thought the topic would be interesting.
+2.	Flight delays are prevalent and a hot topic in all news cycles.
+3.	The purpose of this project is to use exploratory data analysis and to build machine learning models to predict flight delay arrivals for airlines and airports in the United States.
+4.	A flight is considered delayed if it arrived at (or departed) the gate 15 minutes or more after the scheduled arrival (or departure) time as reflected in the airline carriers’ Computerized Reservation System.
+5.	We wanted to share our results and provide top 10 lists of the Best and Worst Airlines and Airports for flight delay arrivals and departures.
 
-January 2020 Flight Predictions:
-1.	Predictive Problem:  Flight Delays for the total flights in January 2020
-2.	Determine the Best and Worst Airlines for flight delays
-3.	Determine the Best and Worst Airports for flight delays
+## C.	Data Exploration Phase of Project
 
-## B.	Machine Learning Model – First Attempt
-*First attempt of a machine learning model, including a confusion matrix and accuracy score
+### *Purpose:  To build machine learning models to predict flight delay arrivals for airlines and airports in the United States.
 
-### Classification Model:
-•	Logistic Regression Model:
-•	Training Accuracy: 93.21%
-•	Testing Accuracy: 93.14%
-•	Precision (weighted average): 93%
-•	Recall (weighted average): 93%
-•	F1-Score (weighted average): 93%
+### Step 1:  Dataset
+•	Found a dataset on Kaggle.com titled, “January Flight Delay Prediction.”  There were two sets of data for January 2019 and January 2020 flight delays and we used the January 2020 dataset.
 
-### Random Forest Classifier:
-•	Training Accuracy: 90.78%
-•	Testing Accuracy: 89.69%
-•	Precision (weighted average): 90%
-•	Recall (weighted average): 90%
-•	F1-Score (weighted average): 87%
+### Step 2:	  Database
+•	A database was setup using AWS
+•	ER Diagrams were created using Quick DBD (picture below)
+•	PgAdmin – Postgress SQL Database Management tool (screen shot below)
+•	Created Flight Delay Database Query Tables (listed below)
 
-### Gradient Boosting Classifier:
-•	Training Accuracy: 93.21%
-•	Testing Accuracy: 93.21%
-•	Precision (weighted average): 93%
-•	Recall (weighted average): 93%
-•	F1-Score (weighted average): 93%
+#### ER Diagrams
+![image](https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/bd20db1c-59f8-49ee-a537-7ae169717f4a)
 
-### Best Model for our Project:
+#### PgAdmin
+![image](https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/bc3e7bcf-926b-43ef-8946-5793b6f3ab32)
 
-It has the highest testing accuracy (93.21%) among the three models, which shows it works well with unseen data. It has a strong balance between precision, recall,
-and F1-score, indicating that it performs well across different metrics. 
+#### Flight Delay Database Query Tables
 
-The model is not only good at identifying true positives but also at minimizing false positives and false negatives, making it the most reliable choice. We believe
-this will be the best model for our final project.
-
-### Machine Learning Model Visuals
-<img width="468" alt="image" src="https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/6dc1741c-b237-4832-acd4-c68df4dbc3b7">
-
-<img width="468" alt="image" src="https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/61bd90b4-ecc9-42b3-8569-65faaebee7bb">
-
-<img width="468" alt="image" src="https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/795f797a-c364-4726-adc4-bcdfa7719552">
-
-<img width="468" alt="image" src="https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/8c09d6e6-9a46-40ab-9d37-546c90ff5d8e">
-
-
-## C.	Visualization Board - First Attempt
-*First attempt of a working dashboard
-
-### 1.	Working Tableau dashboard link:
-https://public.tableau.com/app/profile/kennan.foust/viz/ProjectTableau_16832615644700/Dashboard1?publish=yes
-
-### 2.	Tableau Dashboard - Draft 1:
-<img width="468" alt="image" src="https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/13b4651f-4f19-4cdf-af47-63963931df60">
-
-## D.	Database 
-*Database that stores data for the project (if applicable)
-
-### 1.	The database was setup using AWS.  
-Link to database is below:
-http://flightdelay.cqtoprenvzmu.us-east-2.rds.amazonaws.com
-
-### 2.	ER Diagrams were created using Quick DBD (pictured below)
-
-<img width="403" alt="image" src="https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/4d120c00-ea21-4fa0-bb87-e1642fd07314">
-
-### 3.	PgAdmin – (screen shot pictured below)
-
-<img width="257" alt="image" src="https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/0c889988-b842-4a73-a521-8068c479f4e9">
-
-### 4.  Flight Delay Database Query Tables:
-
-### Table 1:
+##### Table 1: 
 CREATE TABLE Flights (
     DAY_OF_MONTH int,
     DAY_OF_WEEK int,
@@ -108,36 +62,161 @@ CREATE TABLE Flights (
     DISTANCE float
 );
 
-### Table 2:
+##### Table 2:
 CREATE TABLE Arrival_Airports (
     airport varchar PRIMARY KEY,
     airport_name varchar
-    );
+);
 
-### Table 3:
+##### Table 3:
 CREATE TABLE Departure_Airports (
     airport varchar PRIMARY KEY,
     airport_name varchar
-    );
+);
 
-### Table 4:
+##### Table 4:
 CREATE TABLE Airlines (
     carrier varchar PRIMARY KEY,
     carrier_name varchar
-    );
+);
 
-### Foreign Key Constraints:
+##### The Foreign Key Constraints:
 ALTER TABLE Flights
 ADD FOREIGN KEY (DEST) REFERENCES Arrival_Airports(airport);ALTER TABLE Flights
 ADD FOREIGN KEY (ORIGIN) REFERENCES Departure_Airports(airport);ALTER TABLE Flights
 ADD FOREIGN KEY (OP_UNIQUE_CARRIER) REFERENCES Airlines(carrier);
 
-## E.	E.	Group 4 Presentation – Draft
-*Draft of presentation 
 
-### 1.	Link to PowerPoint presentation flie is in the main branch.  
 
-File title is "Group 4 Final Project Draft 1"
+### Step 3: Machine Learning Model 
+
+#### Classification Model:
+•	Logistic Regression Model:
+•	Training Accuracy: 93.21%
+•	Testing Accuracy: 93.14%
+•	Precision (weighted average): 93%
+•	Recall (weighted average): 93%
+•	F1-Score (weighted average): 93%
+
+#### Random Forest Classifier:
+•	Training Accuracy: 90.78%
+•	Testing Accuracy: 89.69%
+•	Precision (weighted average): 90%
+•	Recall (weighted average): 90%
+•	F1-Score (weighted average): 87%
+
+#### Gradient Boosting Classifier:
+•	Training Accuracy: 93.21%
+•	Testing Accuracy: 93.21%
+•	Precision (weighted average): 93%
+•	Recall (weighted average): 93%
+•	F1-Score (weighted average): 93%
+
+#### Best Model for our Project:
+
+It has the highest testing accuracy (93.21%) among the three models, which shows it works well with unseen data. It has a strong balance between precision, recall,
+and F1-score, indicating that it performs well across different metrics. 
+
+The model is not only good at identifying true positives but also at minimizing false positives and false negatives, making it the most reliable choice. We believe
+this will be the best model for our final project.
+
+### Machine Learning Model Visuals
+<img width="468" alt="image" src="https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/6dc1741c-b237-4832-acd4-c68df4dbc3b7">
+
+<img width="468" alt="image" src="https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/61bd90b4-ecc9-42b3-8569-65faaebee7bb">
+
+<img width="468" alt="image" src="https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/795f797a-c364-4726-adc4-bcdfa7719552">
+
+<img width="468" alt="image" src="https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/8c09d6e6-9a46-40ab-9d37-546c90ff5d8e">
+
+## D.	Technologies, languages, tools and algorithms used throughout the project
+
+•	Python technologies used within the machine learning model:
+•	Gradient Boosting Classifier
+•	Numpy
+•	Panda
+•	Skylearn
+•	Sqlalchemy
+•	Jupyter Notebook
+•	Tableau
+•	 CSV Editor
+•	PgAdmin
+•	Quick DBD
+•	Canva 
+•	PowerPoint
+•	Github
+•	AWS
+
+## E.	Results of the Analysis
+
+### Analysis of Flight Delays
+
+#### Time of Day
+- The hour of departure plays a role in the on time arrival of flights.
+- Early AM flights from 4 AM to 9 AM show the best on-time performance. This may be due to less traffic and the fact that severe weather is less likely.
+- Late night flights have the highest delay rates. This could be caused by less resources during this time of day and the impact of delays accumulated during the day.
+
+#### Airlines
+- The performance of airlines varies greatly.
+- Southwest Airlines seems to manage their schedule the best, with the lowest percentage of delayed flights. 
+- Airlines like PSA Airlines and Alaska Airlines have a high percentage of delays, potential issues with the way they manage operations, scheduling, or their routes
+
+#### Airports
+- The efficiency of airports also contributes to delayed flights.
+- Airports, such as Owensboro Daviess County Regional and Quincy Regional-Baldwin Field, effectively manage departures, resulting in no delayed flights. These are small airports, which have less risk of high air traffic volume and less operational challenges.
+- Airports like Adak Island, Pago Pago International, and Ogden-Hinckley have very high rate of delayed departures. These airports could be facing challenges such as weather, resources, or logistical problems.
+
+#### Predictive Modeling
+- The Gradient Boosting Classifier resulted in strong performance for predicting delays. Precision, recall, and accuracy are high, which shows that the model is reliable and could be useful when used against real world datasets.
+- The model is more accurate in predicting on-time flights, it provides reasonable predictions for delayed flights. Further tuning could improve this.
+- With the impact of flight delays on passengers and airlines, a model like this could be valuable for improved scheduling, customer satisfaction, and reduced cost by improving delay rates.
+
+### Please find below additional visuals of our analysis results:
+
+![image](https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/ad37679e-2cbb-4c20-a4f2-e61284cad32a)
+
+![image](https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/f7906f25-0774-445c-a1fd-0ac8eca9d680)
+
+![image](https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/c013ed88-c7f9-403d-afbf-d44843c5b430)
+
+![image](https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/98193d27-22d1-44b7-9b2e-9344bc43d6d0)
+
+##### BEST AIRLINES
+
+![image](https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/9b295d63-50f5-4b66-a431-e5096a0e5cba)
+
+##### WORST AIRLINES
+
+![image](https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/f990058d-97ac-4eaf-90e3-9ec7aaef725b)
+
+## F.	Visualization Dashboard
+•	Tableau 
+•	Working Tableau dashboard link:
+https://public.tableau.com/app/profile/kennan.foust/viz/ProjectTableau_16832615644700/Dashboard1?publish=yes
+
+![image](https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/945adf5a-b169-486e-81c7-e96f3f4df98e)
+
+## G.	Future Analysis Recommendations
+1.	 Impact of Weather:  If weather data is available, investigate the impact of weather conditions on flight delays.  This would reveal how different weather conditions affect flight punctuality. 
+2.	Predicting Flight Cancellations:  Build a model to predict flight cancellations.  This could help passengers and airlines better anticipate and manage cancellations.
+3.	Route Analysis:  Analyze specific routes to identify which ones are more prone to delays or cancellations.
+4.	Other machine learning models worth considering:
+-  Support Vector Machines (SVM)
+-  XGBoost – Could be more efficient and perform better than the Gradient Booster Classifier
+
+## H.	What we would have done differently if we had more time?
+1.	Present additional data on the best and worst hours for on-time arrivals.
+2.	Screen shots of data below
+
+![image](https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/ec438c20-6459-4c0d-b4d4-2d92fdf52907)
+
+![image](https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/add47e2a-8e20-4393-822a-988259d2e8c5)
+
+## I.	PowerPoint Presentation 
+
+### Group 4 FINAL Presentation 
+1.	Link to PowerPoint presentation in main branch.
+File title is “Group 4 Final Project Presentation”
 
 #### PLEASE NOTE:  The PowerPoint file was too big to download and will have to be downloaded in order to view.
 
