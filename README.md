@@ -118,7 +118,7 @@ It has the highest testing accuracy (93.21%) among the three models, which shows
 and F1-score, indicating that it performs well across different metrics. 
 
 The model is not only good at identifying true positives but also at minimizing false positives and false negatives, making it the most reliable choice. We believe
-this will be the best model for our final project.
+this will be the best model for our final project. While our model was very accurate overall, there was a gap between each class (on time and delayed) for the precision, recall, and F1-Score. I believe the model was fine-tuned very well. The issue was a lack of needed features such as weather and other variables that could cause delays. I can say the model predicted delays fairly well, but additional data would have helped thin the gap.
 
 ### Machine Learning Model Visuals
 <img width="468" alt="image" src="https://github.com/jfharris67/Group-4-Final-Project/assets/114943747/6dc1741c-b237-4832-acd4-c68df4dbc3b7">
